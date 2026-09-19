@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#05070b" />
+  <meta name="description" content="Emanuel Mobile Mechanic — mobile auto repair in Nashville, Tennessee. Call or text 754-423-8475." />
+  <title>Emanuel Mobile Mechanic | Nashville, TN</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Emanuel Mobile Mechanic home"><img src="assets/emanuel-logo.png" alt="Emanuel Mobile Mechanic logo"><span>EMANUEL <b>MOBILE MECHANIC</b></span></a>
+    <nav><a href="#services">Services</a><a href="#why">Why mobile</a><a href="#contact">Contact</a></nav>
+    <a class="pill light" href="tel:+17544238475">Call now</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Mechanic working under a car hood"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span></span>NASHVILLE, TENNESSEE</div>
+        <h1>Auto repair.<br><em>Where you are.</em></h1>
+        <p>Mobile mechanic service brought directly to your driveway, workplace, or roadside location. Tell Emanuel what your vehicle needs and get the conversation started.</p>
+        <div class="actions"><a class="pill primary" href="tel:+17544238475">Call (754) 423-8475</a><a class="pill ghost" href="#contact">Request service</a></div>
+      </div>
+      <img class="hero-logo reveal" src="assets/emanuel-logo.png" alt="Emanuel Mobile Mechanic">
+      <div class="scroll">SCROLL <i></i></div>
+    </section>
+
+    <section class="intro reveal">
+      <p class="kicker">MOBILE AUTO REPAIR</p>
+      <h2>The shop comes <span>to you.</span></h2>
+      <p class="lead">No waiting room. No dropping the car off for the day. Emanuel brings mobile mechanic service to drivers across Nashville.</p>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-head reveal"><div><p class="kicker">SERVICES</p><h2>Built for the jobs that<br>keep you moving.</h2></div><p>From maintenance and no-start issues to brake, cooling, electrical and general repair needs. Don't see your repair? Call or text and ask.</p></div>
+      <div class="service-grid">
+        <article class="service-card s1 reveal"><div class="num">01</div><div><h3>Diagnostics</h3><p>Check-engine lights, no-start problems and troubleshooting at your location.</p></div></article>
+        <article class="service-card s2 reveal"><div class="num">02</div><div><h3>Brakes</h3><p>Brake pads, rotors, inspections and related brake-system work.</p></div></article>
+        <article class="service-card s3 reveal"><div class="num">03</div><div><h3>Battery & Charging</h3><p>Battery, starter and alternator service for starting and charging issues.</p></div></article>
+        <article class="service-card s4 reveal"><div class="num">04</div><div><h3>Maintenance</h3><p>Oil changes, spark plugs, filters, belts and routine vehicle care.</p></div></article>
+        <article class="service-card s5 reveal"><div class="num">05</div><div><h3>Cooling System</h3><p>Radiator, thermostat, water-pump and overheating-related service.</p></div></article>
+        <article class="service-card s6 reveal"><div class="num">06</div><div><h3>General Repair</h3><p>Suspension, steering and other mobile-friendly repairs. Ask about your specific job.</p></div></article>
+      </div>
+    </section>
+
+    <section class="split" id="why">
+      <div class="split-photo reveal"></div>
+      <div class="split-copy reveal"><p class="kicker">WHY MOBILE</p><h2>Your driveway.<br><span>Our workspace.</span></h2><div class="feature"><b>01</b><p><strong>Tell us what’s going on.</strong><br>Call or text with your vehicle and the issue you’re having.</p></div><div class="feature"><b>02</b><p><strong>We come to you.</strong><br>Skip the shop trip and get service at your location in Nashville.</p></div><div class="feature"><b>03</b><p><strong>Get back on the road.</strong><br>Straightforward mobile repair without the waiting-room routine.</p></div></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-copy reveal"><p class="kicker">REQUEST SERVICE</p><h2>Tell us about<br><span>your vehicle.</span></h2><p>Send the basics and your message will open as a ready-to-send text to Emanuel.</p><a href="tel:+17544238475" class="phone">(754) 423-8475</a><small>Nashville, Tennessee</small></div>
+      <form class="form reveal" id="serviceForm">
+        <label>Name<input id="name" required placeholder="Your name"></label>
+        <div class="two"><label>Year<input id="year" placeholder="2018"></label><label>Make & model<input id="vehicle" required placeholder="Honda Accord"></label></div>
+        <label>Service needed<select id="service"><option>Diagnostics / unsure</option><option>Brake service</option><option>Battery / no-start</option><option>Starter / alternator</option><option>Oil change / maintenance</option><option>Cooling system</option><option>Suspension / steering</option><option>Other repair</option></select></label>
+        <label>What’s going on?<textarea id="issue" required rows="4" placeholder="Describe the issue, warning lights, noises, or service you need..."></textarea></label>
+        <button class="pill primary" type="submit">Text service request <span>↗</span></button>
+      </form>
+    </section>
+  </main>
+
+  <footer><img src="assets/emanuel-logo.png" alt=""><div><strong>EMANUEL MOBILE MECHANIC</strong><span>Nashville, Tennessee</span></div><a href="tel:+17544238475">754-423-8475</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
